@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/rent1.css" />
+  <link rel="icon" type="image/png" href="images/bugati.png">
+  <title>WorkHub Central | HOME</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">WorkHub Central</a>
+          <svg width="36" height="41" viewBox="0 0 36 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect id="image 11" width="36" height="41" fill="url(#pattern0_37_35)"/>
+            <defs>
+            <pattern id="pattern0_37_35" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_37_35" transform="matrix(0.0113889 0 0 0.01 -0.0694444 0)"/>
+            </pattern>
+            <image id="image0_37_35" data-name="image.png" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+            </defs>
+          </svg>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Uy</a></li>
+        <li><a href="#about">Biz haqimizda</a></li>
+        <li><a href="#ride">Tariflar</a></li>
+        <li><a href="#ishjoylari">Ish joylari</a></li>
+        <li><a href="#tss">TSS</a></li>
+      </ul>
+      <div class="nav__btn">
+        <button class="btn-1" type="button" onclick="window.location.href='uzbek.html'">Bron qilish</button>
+        <button type="button" class="btn-2" id="btns" onclick="window.location.href='rent.html';">Login</button>
+      </div>
+    </nav>
+    <div class="header__container" id="home">
+      <h1>Ishlash uchun qulaylik yarating, kelajagingizni bugun boshlang!</h1>
+      <form action="/">
+        <div class="input__group">
+          <label for="location">Mamlakat & Shahar</label>
+          <input type="text" name="location" id="location" placeholder="Uzbekistan, Andijon" />
+        </div>
+        <div class="input__group">
+          <label for="start">Boshlash</label>
+          <input type="text" name="start" id="start" placeholder="Aug 16, 10:00 AM" />
+        </div>
+        <div class="input__group">
+          <label for="stop">To'xtash</label>
+          <input type="text" name="stop" id="stop" placeholder="Aug 18, 10:00 PM" />
+        </div>
+
+        <button class="btn">
+          <i class="ri-search-line"></i>
+        </button>
+
+      </form>
+    </div>
+    <a href="#about" class="scroll__down">
+      <i class="ri-arrow-down-line"></i>
+    </a>
+  </header>
+
+  <section class="section__container range__container" id="about">
+    <h2 class="section__header">WorkHub Central: Sizning muvaffaqiyat darvozangiz!</h2>
+    <div class="range__grid">
+      <div class="range__card">
+        <img src="images/hot_desk.jpg" alt="range" />
+        <div class="range__details">
+          <h4>Hot desk</h4>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+      <div class="range__card">
+        <img src="images/own.jpg" alt="range" />
+        <div class="range__details">
+          <h4>Shaxsiy stol</h4>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+      <div class="range__card">
+        <img src="images/meeting.jpg" alt="range" />
+        <div class="range__details">
+          <h4>Uchrashuv xona</h4>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+      <div class="range__card">
+        <img src="images/event.jpg" alt="range" />
+        <div class="range__details">
+          <h4>Event zona</h4>
+          <a href="#"><i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container location__container" id="rent">
+    <div class="location__image">
+      <img src="images/immmm.jpg" alt="location" />
+    </div>
+    <div class="location__content">
+      <h2 class="section__header">O'z joyingizdan buyurtma qiling!</h2>
+      <p>
+        WorkHub Central – bu ish va hamkorlik uchun moʻljallangan zamonaviy va qulay muhit. Bizning hamkorlik maydonimizda siz o‘z maqsadlaringizga erishish uchun barcha sharoitlarga ega boʻlasiz. Ergonomik ofis jihozlari, yuqori tezlikdagi internet va inspiratsion hamjamiyat bilan sizni ijodiy va samarali ish kutadi. Joylashuvingiz va biznesingizdan qat’i nazar, WorkHub Central har doim siz bilan birga!
+      </p>
+      <div class="location__btn">
+        <button class="btn">Joyingizni qidiring</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="select__container" id="ride">
+    <h2 class="section__header">Takrorlanmas ajoyib va qulay tariflar !</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="select__card">
+            <img src="images/hot_desk.jpg" />
+            <div class="select__info">
+              <div class="select__info__card">
+                <span><i class="ri-cup-line"></i></span>
+                <h4>tekin coffee</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-wifi-line"></i></span>
+                <h4>tezkor WiFi</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-printer-line"></i></span>
+                <h4>Chop etish</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-rest-time-line"></i></span>
+                <h4>Sokin zonalar</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="select__card">
+            <img src="images/ooo.png" alt="select" />
+            <div class="select__info">
+              <div class="select__info__card">
+                <span><i class="ri-cup-line"></i></span>
+                <h4>tekin coffee</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-wifi-line"></i></span>
+                <h4>tezkor WiFi</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-printer-line"></i></span>
+                <h4>Chop etish</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-rest-time-line"></i></span>
+                <h4>Sokin zonalar</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="select__card">
+            <img src="images/own.jpg" alt="select" />
+            <div class="select__info">
+              <div class="select__info__card">
+                <span><i class="ri-cup-line"></i></span>
+                <h4>tekin coffee</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-wifi-line"></i></span>
+                <h4>tezkor WiFi</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-printer-line"></i></span>
+                <h4>Chop etish</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-rest-time-line"></i></span>
+                <h4>Sokin zonalar</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="select__card">
+            <img src="images/event.jpg" alt="select" />
+            <div class="select__info">
+              <div class="select__info__card">
+                <span><i class="ri-cup-line"></i></span>
+                <h4>tekin coffee</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-wifi-line"></i></span>
+                <h4>tezkor WiFi</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-printer-line"></i></span>
+                <h4>Chop etish</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-rest-time-line"></i></span>
+                <h4>Sokin zonalar</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="select__card">
+            <img src="images/meeting.jpg" alt="select" />
+            <div class="select__info">
+              <div class="select__info__card">
+                <span><i class="ri-cup-line"></i></span>
+                <h4>tekin coffee</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-wifi-line"></i></span>
+                <h4>tezkor WiFi</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-printer-line"></i></span>
+                <h4>Chop etish</h4>
+              </div>
+              <div class="select__info__card">
+                <span><i class="ri-rest-time-line"></i></span>
+                <h4>Sokin zonalar</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form action="/" class="select__form">
+      <div class="select__price">
+        <span><i class="ri-price-tag-3-line"></i></span>
+        <div><span id="select-price">99</span>ming so'm/soat</div>
+      </div>
+      <div class="select__btns">
+        <h1 id="co-working">Hot desk</h1>
+        <button class="btn">Buyurtma qilish</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="section__container story__container" id="ishjoylari">
+    <h2 class="section__header">ISHGA YANGI NAZAR !</h2>
+    <div class="story__grid">
+      <div class="story__card">
+        <div class="story__date">
+          <span>12</span>
+          <div>
+            <p>Yanvar</p>
+            <p>2024</p>
+          </div>
+        </div>
+        <h4>Ilhom bilan to‘lgan ish kunlari sari!</h4>
+        <p>
+          Biz bilan birga WorkHub a’zolari ishga bo‘lgan yondashuvini qanday o‘zgartirgani va qulay hamjamiyatda ishlash zavqini qanday topgani haqidagi ilhomlantiruvchi hikoyalarga sho‘ng‘ing!
+        </p>
+        <img src="images/rees.jpg" alt="story" />
+      </div>
+      <div class="story__card">
+        <div class="story__date">
+          <span>04</span>
+          <div>
+            <p>Mart</p>
+            <p>2024</p>
+          </div>
+        </div>
+        <h4>Qulaylik va hashamat: Tajribalar...</h4>
+        <p>
+          Ushbu joyda biz WorkHubning zamonaviy dizayni, yuqori darajadagi qulayliklar va mukammal xizmat ko'rsatishni ta'kidlaymiz, bu esa har bir ish kunini yanada samarali va ilhomlantiruvchi qiladi.
+        </p>
+        <img src="images/oooolllll.jpg" alt="story" />
+      </div>
+      <div class="story__card">
+        <div class="story__date">
+          <span>18</span>
+          <div>
+            <p>Iyul</p>
+            <p>2024</p>
+          </div>
+        </div>
+        <h4>Hayotingizga moslashuvchi makon – WorkHub!</h4>
+        <p>
+          Bizning WorkHub kabi zamonaviy co-working joylarimiz professional va oilaviy hayotingizga mukammal tarzda moslashadi. Har bir inson uchun qulay va ilhomlantiruvchi muhitda ishlash imkonini yaratamiz.
+        </p>
+        <img src="images/isisisi.jpg" alt="story" />
+      </div>
+    </div>
+  </section>
+
+  <section class="banner__container">
+    <div class="banner__wrapper">
+      <img src="images/banner-1.png" alt="banner" />
+      <img src="images/banner-2.png" alt="banner" />
+      <img src="images/banner-3.png" alt="banner" />
+      <img src="images/banner-4.png" alt="banner" />
+      <img src="images/banner-5.png" alt="banner" />
+      <img src="images/banner-6.png" alt="banner" />
+      <img src="images/banner-7.png" alt="banner" />
+      <img src="images/banner-8.png" alt="banner" />
+      <img src="images/banner-9.png" alt="banner" />
+      <img src="images/banner-10.png" alt="banner" />
+    </div>
+  </section>
+  <br><br><br>
+  <section class="section__review" id="review">
+    <h1>Bizning mijozlar nima deyishgan ✨</h1>
+
+    <div class="review-container">
+
+      <div class="review-item">
+        <p>
+          <b class="accent">WorkHub</b> yaxshi joydek tuyuladi, lekin bir marta borib ko‘rdim, ish stollari juda tor va odamlar haddan tashqari ko‘p edi.
+        </p>
+        <div class="review-people">
+          <img class="ustoz" src="images/ustoz.jpg" alt="Website Ustoz">
+          <h5>MirzoUlug'bek.</h5>
+        </div>
+      </div>
+
+      <div class="review-item">
+        <p>
+          <b class="accent">WorkHub</b> ishlash juda qulay! Zamonaviy muhit, tezkor internet va dam olish zonalari ilhom baxsh etadi. Har kim uchun ideal joy!
+        </p>
+        <div class="review-people">
+          <img src="images/ilon.png" alt="Jigar">
+          <h5>Elon Mask.</h5>
+        </div>
+      </div>
+
+      <div class="review-item">
+        <p>
+          <b class="accent">WorkHub</b> – bu ijodkorlik va samaradorlikni oshirish uchun ajoyib joy! Qulayliklar va sokin muhit ishlashni yanada yoqimli qiladi.
+        </p>
+        <div class="review-people">
+          <img src="images/abdukarim.jpg" alt="Abdukarim Mirzayev">
+          <h5>Abdukarim M.</h5>
+        </div>
+      </div>
+
+    </div>
+    <br><br><br><br>
+  </section>
+
+  <div class="faq-section" id="tss">
+    <h2>Tez-tez so'raladigan savollar</h2>
+    <div class="faq-item">
+      <div class="faq-question">
+        WorkHub Central qachon ochiq bo'ladi? 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        WorkHub Central har kuni 24/7 ochiq va mijozlarimiz doimiy xizmatlardan foydalanishlari mumkin.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        WorkHub xizmatlariga qanday yozilsam bo'ladi?
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        Bizning veb-saytimiz orqali yoki WorkHub Central binosiga tashrif buyurib xizmatlarimizga yozilishingiz mumkin.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        WorkHub'da qanday qulayliklar bor? 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        WorkHub'da yuqori tezlikdagi internet, shaxsiy xonalar, uchrashuv xonalari, ichimliklar, dam olish hududi va ko'plab boshqa qulayliklar mavjud.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        WorkHub Central'ning narxlari qanday? 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        WorkHub Central'da narxlar xizmatlar turiga qarab farqlanadi. Umumiy joylar soati 20,000 so‘m, shaxsiy xonalar esa kunlik 150,000 so‘mdan boshlanadi.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        WorkHub'da tadbirlar o'tkazish mumkinmi? 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        Albatta! WorkHub Central tadbirlar, seminarlar va treninglar uchun maxsus xonalarni taklif qiladi. Oldindan buyurtma berish tavsiya etiladi.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        WorkHub'da ishlash uchun asbob-uskunalar mavjudmi? 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        Ha, WorkHub Central'ning barcha joylarida yuqori sifatli ofis mebellari, printerlar va boshqa zarur asbob-uskunalar mavjud.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        WorkHub'da qaysi ichimliklar taqdim etiladi?
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        Bizning hududda choy, qahva va sovuq ichimliklar bepul taqdim etiladi. Shuningdek, avtomatlar orqali boshqa ichimliklarni sotib olish imkoniyati bor.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        Internet tezligi qanday? 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        WorkHub Central yuqori tezlikdagi internet bilan ta'minlangan. Barcha mijozlar uchun Wi-Fi aloqasi cheksiz va bepul.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        Ish kunlarida joy band qilish kerakmi?
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        WorkHub Central har doim mijozlar uchun ochiq, ammo band bo'lgan paytlar uchun oldindan joy band qilish tavsiya qilinadi.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        WorkHub'ga qanday yetib borish mumkin? 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 14.828l5.657-5.657 1.414 1.414L12 17.656 4.93 10.585l1.414-1.414z"/>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        WorkHub Central shaharning markazida joylashgan bo'lib, jamoat transporti va avtomobillar uchun qulay kirish yo'llariga ega. Shuningdek, bepul avtoturargoh mavjud.
+      </div>
+    </div>
+  </div>
+
+  <section class="download">
+    <div class="section__container download__container">
+      <div class="download__content">
+        <h2 class="section__header">WorkHub Central</h2>
+        <div class="download__links">
+          <a href="#">
+            <img src="images/apple.png" alt="apple" />
+          </a>
+          <a href="#">
+            <img src="images/google.png" alt="google" />
+          </a>
+        </div>
+      </div>
+      <div class="download__image">
+        <img src="images/gap_yoq.png" alt="download" />
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="contact">
+    <div class="section__container news__container">
+      <h2 class="section__header">Barcha so'nggi yangiliklardan xabardor bo'ling.</h2>
+      <form action="/">
+        <input type="text" placeholder="Your email" />
+        <button class="btn">
+          <i class="ri-telegram-2-fill"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h4>Manbalar</h4>
+        <ul class="footer__links">
+          <li><a href="#">O'rnatish qo'llanmasi</a></li>
+          <li><a href="#">Chiqarish eslatmasi</a></li>
+          <li><a href="#">Hamjamiyat yordami</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Kompaniya</h4>
+        <ul class="footer__links">
+          <li><a href="#">Biz haqimizda</a></li>
+          <li><a href="#">Kasb faoliyati</a></li>
+          <li><a href="#">Matbuot</a></li>
+          <li><a href="#">Qo'llab-quvvatlash</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Mahsulot</h4>
+        <ul class="footer__links">
+          <li><a href="#">Namoyish</a></li>
+          <li><a href="#">Xavfsizlik</a></li>
+          <li><a href="#">TSS</a></li>
+          <li><a href="#">Xususiyatlar</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Bizni kuzatib boring</h4>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://t.me/the_PDP"><i class="ri-telegram-2-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2025 Muhammadaziz's project - WorkHub Central. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/rent1.js"></script>
+</body>
+
+</html>
